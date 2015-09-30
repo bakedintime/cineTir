@@ -11,31 +11,31 @@ Los componentes requeridos para correr el proyecto son:
 
 ### Utilizando Ionic Framework
 
-* Para crear un nuevo proyecto. <template> puede ser *tabs*, *sidebar* o *blank*. 
+Para crear un nuevo proyecto. <template> puede ser *tabs*, *sidebar* o *blank*. 
 
 ```
     ionic start <nombreApp> <template>
 ```
 
-* Para ejecutar el proyecto y visualizarlo en un explorador web. Este comando abre una nueva pestaña en el explorador por default.
+Para ejecutar el proyecto y visualizarlo en un explorador web. Este comando abre una nueva pestaña en el explorador por default.
 
 ```
     ionic serve
 ```
 
-* Para cmopilar una de las plataformas del proyecto. <platform> puede ser *android* o *ios* para este proyecto en específico.
+Para compilar una de las plataformas del proyecto. <platform> puede ser *android* o *ios* para este proyecto en específico.
 
 ```
     ionic build <platform> [--release]
 ```
 
-* Para agregar una plataforma al proyecto, e.g., agregar el código fuente de iOS o Android.
+Para agregar una plataforma al proyecto, e.g., agregar el código fuente de iOS o Android.
 
 ```
     ionic add platform <platform>
 ```
 
-* Para agregar un plugin. Son proyectos que agregan funciones específicas escritas para el framework de Cordova. (e.g. http://ngcordova.com). Dirección puede ser el nombre de la extensión o la dirección del repositorio en Git.
+Para agregar un plugin. Son proyectos que agregan funciones específicas escritas para el framework de Cordova. (e.g. http://ngcordova.com). Dirección puede ser el nombre de la extensión o la dirección del repositorio en Git.
 
 ```
     ionic add plugin <direccion>
