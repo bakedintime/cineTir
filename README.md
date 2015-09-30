@@ -32,13 +32,13 @@ Para compilar una de las plataformas del proyecto. <platform> puede ser *android
 Para agregar una plataforma al proyecto, e.g., agregar el código fuente de iOS o Android.
 
 ```
-    ionic add platform <platform>
+    ionic platform add <platform>
 ```
 
 Para agregar un plugin. Son proyectos que agregan funciones específicas escritas para el framework de Cordova. (e.g. http://ngcordova.com). Dirección puede ser el nombre de la extensión o la dirección del repositorio en Git.
 
 ```
-    ionic add plugin <direccion>
+    ionic plugin add <direccion>
 ```
 
 
