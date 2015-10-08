@@ -41,15 +41,19 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('PlaylistsCtrl', function($scope) {
-  $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
+.controller('DashboardCtrl', function($scope) {
+  $scope.surveys = [
+    { title: 'Viernes 15 oct', id: 1, date: '2015-10-15T10:00:00-00:00' },
+    { title: 'Martes 2 julio', id: 2, date: '2015-07-02T10:00:00-00:00' },
+    { title: 'Lunes 1 mayo', id: 3, date: '2015-05-01T10:00:00-00:00' },
+    { title: 'Miércoles 4 de febrero', id: 4, date: '2015-02-04T10:00:00-00:00' },
+    { title: 'Lunes 2 de febrero', id: 5, date: '2015-02-02T10:00:00-00:00' },
+    { title: 'Martes 1 de enero', id: 6, date: '2015-01-01T10:00:00-00:00' }
   ];
+
+  $scope.format = function(date){
+    return moment(date, moment.ISO_8601).format('MMMM D, YYYY');
+  }
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {

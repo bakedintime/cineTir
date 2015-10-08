@@ -1,0 +1,11 @@
+<ion-view view-title="Encuestas">
+  <ion-content>
+    <div class="list card" ng-repeat="survey in surveys" href="#/app/playlists/{{survey.id}}">
+        <div class="item item-avatar">
+            <img src="http://ionicframework.com/img/docs/mcfly.jpg">
+            <h2>{{survey.title}}</h2>
+            <p>{{format(survey.date)}}</p>
+        </div>
+    </div>
+  </ion-content>
+</ion-view>
