@@ -40,5 +40,6 @@ angular.module('starter.controllers', [])
     }, 1000);
   };
 })
-.controller('PlaylistCtrl', function($scope, $stateParams) {
+.controller('SurveyCtrl', function($scope, $stateParams) {
+  $scope.surveyID = $stateParams.surveyID;
 });

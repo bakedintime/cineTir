@@ -68,11 +68,11 @@ angular.module(
     })
 
   .state('app.single', {
-    url: '/playlists/:playlistId',
+    url: '/surveys/:surveyID',
     views: {
       'menuContent': {
-        templateUrl: 'templates/playlist.html',
-        controller: 'PlaylistCtrl'
+        templateUrl: 'templates/survey.html',
+        controller: 'SurveyCtrl'
       }
     }
   });
@@ -81,4 +81,5 @@ angular.module(
 
 
   $ionicMaterialConfigProvider.enableForAllPlatforms();
+  $ionicMaterialConfigProvider.useMaterialRipple = false;
 });
