@@ -1,4 +1,5 @@
-angular.module('cineTir.peliculas.servicios', [])
+angular.module('cineTir.films.factories', [])
+
 .factory('Peliculas', function($scope, $http){
   // Get data in spanish: http://theimdbapi.betaeasy.com/thread/7051
 
@@ -8,7 +9,7 @@ angular.module('cineTir.peliculas.servicios', [])
   var dataFormat = 'json';
 
   var service = {
-    // Modifica el tipo de formato en el que 
+    // Modifica el tipo de formato en el que
     // se devuelve la respuesta del API
     changeDataFormat:function(newFormat){
       if(newFormat!=='json' && newFormat!=='xml'){
@@ -17,7 +18,7 @@ angular.module('cineTir.peliculas.servicios', [])
       }
       dataFormat = newFormat;
     },
-    // Obtiene la información de una película 
+    // Obtiene la información de una película
     // por medio de su título
     // Devuelve un objeto Promise del que se debe
     // definir una función en case de exito y una
@@ -34,7 +35,7 @@ angular.module('cineTir.peliculas.servicios', [])
         }
       });
     },
-    // Obtiene la información de una película 
+    // Obtiene la información de una película
     // por medio de su ID
     // Devuelve un objeto Promise del que se debe
     // definir una función en case de exito y una
