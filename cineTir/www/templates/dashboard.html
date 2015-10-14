@@ -1,0 +1,23 @@
+<ion-view view-title="Encuestas">
+  <ion-content>
+    <div class="list card"  ng-repeat="survey in surveys | orderBy:'-date'" ng-click="(survey.open)?goToSurvey({{survey.id}}):noop()">
+        <div class="row middle-xs">
+          <div class="col-xs-2 center-xs" ng-show="!survey.open">
+            <img class="closed-icon box" src="/img/closed.png">
+          </div>
+          <div ng-class="(survey.open)?'col-xs-12':'col-xs-10'">
+            <div ng-class="'item item-avatar box '+((survey.open)?'':'closed-survey')">
+                <img src="http://ionicframework.com/img/docs/mcfly.jpg">
+                <h2>{{survey.title}}</h2>
+                <p>{{format(survey.date)}}</p>
+            </div>
+          </div>
+          <div ng-show="!survey.open" style="width:100%">
+            <button class="button icon-right ion-chevron-right button-balanced results-closed-survey" ng-click="goToSurvey({{survey.id}})">
+              Mostrar Resultados
+            </button>
+          </div>
+        </div>
+    </div>
+  </ion-content>
+</ion-view>
